@@ -81,20 +81,6 @@ class_weights_dict = dict(enumerate(class_weights))
 
 
 # ==========================
-# Fine Tuning Bert  
-# ==========================
-
-model_path = 'Bert'
-
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-
-id2label = {0: "suicide", 1: "non-suicide"}
-label2id = {"suicide" :0 , "non-suicide": 1}
-
-
-
-
-# ==========================
 # Embedding GloVe
 # ==========================
 embedding_index = {}
